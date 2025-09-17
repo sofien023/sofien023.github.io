@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="design/components.css">
     <link rel="stylesheet" href="design/animations.css">
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -139,18 +140,15 @@
             </div>
             </div>
         </section>
-        
-        <!-- Load EmailJS SDK -->
-        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
         <script>
-            // Initialize EmailJS once (not inside sendMail)
+        
             (function() {
-            emailjs.init("SiTuXISjqvfYLle5t"); // <-- Your Public Key
+            emailjs.init("SiTuXISjqvfYLle5t");
             })();
         
             // Handle form submission
             document.getElementById("contact-form").addEventListener("submit", function(event) {
-            event.preventDefault(); // prevent page reload
+            event.preventDefault();
         
             let params = {
                 user_name: document.getElementById("user_name").value,
@@ -175,7 +173,5 @@
             <p>&copy; 2025 Sofien Ghorbel. All rights reserved.</p>
         </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>

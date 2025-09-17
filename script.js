@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add loading class to body to hide content initially
     document.body.classList.add('loading');
 
-    // Show loading screen for 3 seconds
+    // Show loading screen for 1 second
     setTimeout(function() {
         document.body.classList.remove('loading');
         const loadingScreen = document.getElementById('loading-screen');
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
         setTimeout(() => {
             loadingScreen.style.display = 'none';
         }, 500); // Wait for transition
-    }, 3000);
+    }, 1000);
 
     // Smooth scrolling for navigation links
     const links = document.querySelectorAll('a[href^="#"]');
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const contactForm = document.querySelector('.contact-form');
     contactForm.addEventListener('submit', function(e) {
         e.preventDefault();
-        alert('Thank you for your message! (This is a placeholder)');
+        alert('Thank you for your message!');
         // Here you would typically send the form data to a server
     });
 });

@@ -1,17 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Add loading class to body to hide content initially
-    document.body.classList.add('loading');
-
-    // Show loading screen for 1 second
-    setTimeout(function() {
-        document.body.classList.remove('loading');
-        const loadingScreen = document.getElementById('loading-screen');
-        loadingScreen.style.opacity = '0';
-        loadingScreen.style.pointerEvents = 'none';
-        setTimeout(() => {
-            loadingScreen.style.display = 'none';
-        }, 500); // Wait for transition
-    }, 1000);
 
     // Smooth scrolling for navigation links
     const links = document.querySelectorAll('a[href^="#"]');

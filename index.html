@@ -2,104 +2,155 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link  rel="icon" href="sofien.jpg">
+    <title>Sofien Ghorbel - Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <script src="controle.js"></script>
-    <title>Sofien Ghorbel</title>
 </head>
-<body >
+<body>
     <header>
-        <div class="logo">
-            <a href="#Home">
-                <span class="sou">S</span>ofien <span class="sou">G</span>horbel
-            </a>
-        </div>
-        <div class="nav">
-            <ul>
-                <li><a href="#Home"><span class="sou">H</span>ome</a></li>
-                <li><a href="#About"><span class="sou">A</span>bout</a></li>
-                <li><a href="#Contact"><span class="sou">C</span>ontact</a></li>
-            </ul>
-        </div>
+        <nav>
+            <div class="nav-container">
+                <h1 class="logo">Sofien Ghorbel</h1>
+                <ul class="nav-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#associative">Associative Life</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
     </header>
-    <section class="main" id="Home">
-    <div class="container">
-        <div class="intro">
-            <p>
-               Hi , I'm <span class="sou">S</span>ofien
-                <span class="sou">G</span>horbel
-            </p>
-            <p>
-                I'm a computer science student 
-            </p>
-            <p >
-                <span class="sou">A</span>nd
-                I want to be in the future a <span class="sou">engineer</span> 
-            </p>
-            <div class="btn">
-                <a href="#About">About Me</a> 
+
+    <section id="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Hello, I'm Sofien Ghorbel</h1>
+                <p>Software Engineer | Web Developer | Innovator</p>
+                <a href="#about" class="btn">Learn More</a>
             </div>
-        </div>
-        <div class="im">
-            <img src="sofien_1.jpg">
-        </div>
-    </div>
-    </section>
-    <section class="second"id="About">
-        <div class="container">
-            <div class="intro">
-                <p>
-                    I was born in Sfax
-                </p>
-                <p>
-                    On 23th of July 2004 
-                </p>
-                <p>
-                    <span class="sou">A</span>nd
-                    I love music
-                </p>
-            </div>
-            <div class="im">
-                <img src="sofien.jpg">
+            <div class="hero-image">
+                <img src="sofien.jpg" alt="Sofien Ghorbel" class="profile-pic">
             </div>
         </div>
     </section>
-    <section class="final" id="Contact">
+
+    <section id="about">
         <div class="container">
-            <div class="intro">
-                <p>
-                    If you want to contact me
-                </p>
-                <p>
-                    Send you information
-                </p>
-                <p>
-                    And i will get back to you 
-                </p>
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Final-year bachelor's student in computer science, passionate about coding, problem solving, and emerging technologies. Curious, creative and driven by innovation, I want to make a positive impact in the world of technology through continuous learning and innovative solutions.</p>
+                    <p>My journey in tech has equipped me with skills in HTML, CSS, JavaScript, PHP, Python, Java, and more, allowing me to tackle complex challenges and deliver high-quality results.</p>
+                </div>
+                <div class="about-image">
+                    <img src="mai2023.jpg" alt="Additional Image" class="additional-pic">
+                </div>
             </div>
-                <form action="sofien.php" method="post" onsubmit="return verif()">
-                    <fieldset>
-                        <div>
-                            <label  for="first">First name</label>
-                            <input type="text" name="fn" id="fn">
-                        </div>
-                        <div>
-                            <label  for="second">Last  name</label>
-                            <input type="text" name="ln" id="ln">
-                        </div>
-                        <div>
-                            <label for="last">Email      </label> 
-                            <input type="text" name="email" id="email">
-                        </div>
-                        <div>
-                            <input class="btn" type="submit" value="Send">
-                            <input class="btn" type="reset" value="Cancel">
-                        </div>
-                    </fieldset>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <h3>Frontend Development</h3>
+                    <p>HTML, CSS, JavaScript, React</p>
+                </div>
+                <div class="skill-item">
+                    <h3>Backend Development</h3>
+                    <p>Node.js, Python, Databases</p>
+                </div>
+                <div class="skill-item">
+                    <h3>Tools & Technologies</h3>
+                    <p>Git, Docker, AWS</p>
+                </div>
+                <div class="skill-item">
+                    <h3>Design</h3>
+                    <p>UI/UX, Responsive Design</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="associative">
+        <div class="container">
+            <h2>Associative Life</h2>
+            <div class="associative-grid">
+                <div class="associative-item">Member – IEEE ISIMS Student Branch (October 2023 – Present)</div>
+                <div class="associative-item">Webmaster – IEEE WIE ISIMS Affinity Group (April 2024 – October 2024)</div>
+                <div class="associative-item">Ambassador – WIE ACT 3.0 (2024) - IEEEXtreme 18.0 (2024)</div>
+                <div class="associative-item">Participant – IEEEXtreme 17.0 & 18.0</div>
+                <div class="associative-item">Participant – IEEE TSYP 11 (2023) & TSYP 12 (2024)</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-item">
+                    <h3>Personal Website (Portfolio)</h3>
+                    <p>Development of a personal website to present my projects, skills and achievements (HTML, CSS, JavaScript, PHP).</p>
+                </div>
+                <div class="project-item">
+                    <h3>JavaScript Quiz Game</h3>
+                    <p>Development of an interactive quiz game integrating scoring and dynamic interface features.</p>
+                </div>
+                <div class="project-item">
+                    <h3>Application Mobile Android</h3>
+                    <p>Development of an Android application in Java and XML to create smart alarms: to deactivate the alarm, the user must correctly answer a quiz.</p>
+                </div>
+                <div class="project-item">
+                    <h3>E-learning Platform</h3>
+                    <p>Development of an e-learning platform with Flutter & Supabase as a mobile developer intern.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>Feel free to reach out for collaborations or just a friendly chat!</p>
+                    <div class="info-item">
+                        <strong>Email:</strong> Sofieneghorbel39@gmail.com
+                    </div>
+                    <div class="info-item">
+                        <strong>Phone:</strong> +216 52 952 709
+                    </div>
+                    <div class="info-item">
+                        <strong>Location:</strong> Sfax, Tunisia
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="tel" placeholder="Your Phone (optional)">
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
                 </form>
+            </div>
         </div>
     </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Sofien Ghorbel. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

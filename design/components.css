@@ -94,6 +94,7 @@ section {
     border-radius: 10px;
     text-align: center;
     transition: transform 0.3s;
+    box-shadow: 0 4px 8px rgb(255, 255, 255,0.3);
 }
 
 .skill-item:hover {
@@ -120,6 +121,7 @@ section {
     border-radius: 10px;
     text-align: center;
     transition: transform 0.3s;
+    box-shadow: 0 4px 8px rgb(255, 255, 255,0.3);
 }
 
 .associative-item:hover {
@@ -138,6 +140,7 @@ section {
     border-radius: 10px;
     text-align: center;
     transition: transform 0.3s;
+    box-shadow: 0 4px 8px rgb(255, 255, 255,0.3);
 }
 
 .project-item:hover {

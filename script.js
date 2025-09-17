@@ -54,7 +54,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const contactForm = document.querySelector('.contact-form');
     contactForm.addEventListener('submit', function(e) {
         e.preventDefault();
-        alert('Thank you for your message!');
         // Here you would typically send the form data to a server
     });
 });

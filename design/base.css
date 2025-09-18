@@ -39,4 +39,14 @@ body {
     100% { transform: scale(1); opacity: 1; }
 }
 
+.cursor {
+    color: var(--accent-color);
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
+
 

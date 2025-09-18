@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sofien Ghorbel - Portfolio</title>
+    <link rel="stylesheet" href="design/base.css">
+    <link rel="stylesheet" href="design/layout.css">
+    <link rel="stylesheet" href="design/components.css">
+    <link  rel="icon" href="sg.png">
+    <link rel="stylesheet" href="design/animations.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <h1 class="logo">Sofien Ghorbel</h1>
+                <ul class="nav-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#associative">Associative Life</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Hello, I'm Sofien Ghorbel</h1>
+                <p>Software Developer | Data Scientist | Innovator</p>
+                <a href="#about" class="btn">Learn More</a>
+            </div>
+            <div class="hero-image">
+                <img src="sofien.jpg" alt="Sofien Ghorbel" class="profile-pic">
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container card">
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Final-year bachelor's student in computer science, passionate about coding, problem solving, and emerging technologies. Curious, creative and driven by innovation, I want to make a positive impact in the world of technology through continuous learning and innovative solutions.</p>
+                    <p>My journey in tech has equipped me with skills in HTML, CSS, JavaScript, PHP, Python, Java, and more, allowing me to tackle complex challenges and deliver high-quality results.</p>
+                </div>
+                <div class="about-image">
+                    <img src="mai2023.jpg" alt="Additional Image" class="additional-pic">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="grid">
+                <div class="item">
+                    <h3>Frontend Development</h3>
+                    <p>HTML, CSS, JavaScript, React,Flutter</p>
+                </div>
+                <div class="item">
+                    <h3>Backend Development</h3>
+                    <p>Node.js,PHP, Python, </p>
+                </div>
+                <div class="item">
+                    <h3>Tools & Technologies</h3>
+                    <p>Git</p>
+                </div>
+                <div class="item">
+                    <h3>Design</h3>
+                    <p>Responsive Design</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="associative">
+        <div class="container">
+            <h2>Associative Life</h2>
+            <div class="grid">
+                <div class="item">Member – IEEE ISIMS Student Branch (October 2023 – Present)</div>
+                <div class="item">Webmaster – IEEE WIE ISIMS Affinity Group (April 2024 – October 2024)</div>
+                <div class="item">Ambassador – WIE ACT 3.0 (2024) - IEEEXtreme 18.0 (2024)</div>
+                <div class="item">Participant – IEEEXtreme 17.0 & 18.0</div>
+                <div class="item">Participant – IEEE TSYP 11 (2023) & TSYP 12 (2024)</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="grid projects-grid">
+                <div class="item">
+                    <h3>Personal Website (Portfolio)</h3>
+                    <p>Development of a personal website to present my projects, skills and achievements (HTML, CSS, JavaScript, EmailJS).</p>
+                </div>
+                <div class="item">
+                    <h3>JavaScript Quiz Game</h3>
+                    <p>Development of an interactive quiz game integrating scoring and dynamic interface features.</p>
+                </div>
+                <div class="item">
+                    <h3>Mobile Application</h3>
+                    <p>Development of an Android application in Java and XML to create smart alarms: to deactivate the alarm, the user must correctly answer a quiz.</p>
+                </div>
+                <div class="item">
+                    <h3>E-learning Platform</h3>
+                    <p>Development of an e-learning platform with Flutter & Supabase as a mobile developer intern.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <section id="contact">
+            <div class="container">
+            <h2>Contact Me</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                <h3>Get In Touch</h3>
+                <p>Feel free to reach out for collaborations or just a friendly chat!</p>
+                </div>
+                <!-- Contact Form -->
+                <form id="contact-form" class="contact-form">
+                <input type="text" id="user_name" name="user_name" placeholder="Your Name" required>
+                <input type="email" id="user_email" name="user_email" placeholder="Your Email" required>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" id="submit_btn" class="btn">Send Message</button>
+                </form>
+                <p id="response"></p>
+            </div>
+            </div>
+        </section>
+        <script>
+        
+            (function() {
+            emailjs.init("SiTuXISjqvfYLle5t");
+            })();
+        
+            // Handle form submission
+            document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+        
+            let params = {
+                user_name: document.getElementById("user_name").value,
+                user_email: document.getElementById("user_email").value,
+                message: document.getElementById("message").value,
+            };
+        
+            emailjs.send("service_uym1odg", "template_k5fgtym", params)
+                .then(() => {
+                document.getElementById("response").innerText = "✅ Message sent successfully!";
+                document.getElementById("contact-form").reset();
+                }, (error) => {
+                document.getElementById("response").innerText = "❌ Failed to send message.";
+                console.error("Error:", error);
+                });
+            });
+        </script>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Sofien Ghorbel. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

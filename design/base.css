@@ -1,3 +1,11 @@
+:root {
+    --primary-color: #0a192f;
+    --secondary-color: #1a365d;
+    --tertiary-color: #2d3748;
+    --quaternary-color: #4a5568;
+    --accent-color: #64ffda;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +16,7 @@ body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: #fff;
-    background: linear-gradient(-45deg, #0a192f, #1a365d, #2d3748, #0a192f);
+    background: linear-gradient(-45deg, var(--primary-color), var(--secondary-color), var(--tertiary-color), var(--primary-color));
     background-size: 400% 400%;
     animation: gradientShift 15s ease infinite;
 }

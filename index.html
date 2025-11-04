@@ -151,11 +151,11 @@
         <div class="container">
             <h2>Projects</h2>
             <div class="grid projects-grid">
-                <div class="item">
+                <div class="item" >
                     <h3>Personal Website</h3>
                     Development of a personal website to present my projects, skills and achievements (HTML, CSS, JavaScript, EmailJS).
                 </div>
-                <div class="item" onclick="itemclick()">
+                <div class="item" data-href="https://game.sofienghorbel.me">
                     <h3>JavaScript Quiz Game</h3>
                     Development of an interactive quiz game integrating scoring and dynamic interface features.
                 </div>
@@ -215,8 +215,14 @@
                 console.error("Error:", error);
                 });
             });
-            function itemclick() {
-                location.replace("game.sofienghorbel.me")
+
+            document.querySelectorAll('.item').forEach(div => {
+                div.addEventListener('click', () => {
+                    const url = div.getAttribute('data-href');
+                    window.location.href = url;
+                }
+                );
+            });
         </script>
     <footer>
         <div class="container">

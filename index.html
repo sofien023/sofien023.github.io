@@ -1,233 +1,881 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="design/base.css">
-    <link rel="stylesheet" href="design/layout.css">
-    <link rel="stylesheet" href="design/components.css">
-    <link  rel="icon" href="sg.png">
-    <link rel="stylesheet" href="design/animations.css">
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script src="script.js"></script>
-    <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Sofien Ghorbel | Portfolio</title>
-
-  <meta name="description" content="Sofien Ghorbel is a software developer and data scientist. Check out my projects in mobile(flutter, web development (React, Python, Node.js), and engineering solutions.">
-  <meta name="keywords" content="Software Developer, Data Scientist, Web development, Machine Learning, React, Python, Node.js, Portfolio, Tunisia">
-
+  <title>Sofien Ghorbel | Data Scientist</title>
+  <meta name="description" content="Sofien Ghorbel is a Data Scientist and Software Developer skilled in machine learning, data analytics, Python, and building intelligent systems. Explore projects and achievements.">
+  <meta name="keywords" content="Data Scientist, Machine Learning, Python, scikit-learn, Power BI, SQL, Deep Learning, Data Analytics, Tunisia, Portfolio, Sofien Ghorbel">
   <link rel="canonical" href="https://sofienghorbel.me/">
-  <meta property="og:title" content="Sofien Ghorbel — Software Developer & Data Scientist">
-  <meta property "og:description" content="Portfolio of Sofien Ghorbel: software & data science projects using React, Python, machine learning.">
+  <meta property="og:title" content="Sofien Ghorbel — Data Scientist & Software Developer">
+  <meta property="og:description" content="Portfolio of Sofien Ghorbel: machine learning, data analytics, and software engineering projects.">
   <meta property="og:image" content="https://sofienghorbel.me/sof.jpg">
   <meta property="og:url" content="https://sofienghorbel.me/">
   <meta property="og:type" content="website">
-
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Sofien Ghorbel",
-    "jobTitle": "Software Developer & Data Scientist",
+    "jobTitle": "Data Scientist & Software Developer",
     "url": "https://sofienghorbel.me/",
     "sameAs": [
       "https://www.linkedin.com/in/sofien-ghorbel",
       "https://github.com/sofien023"
     ],
-    "knowsAbout": [
-      "Machine Learning",
-      "Web development",
-      "Python",
-      "React",
-      "Node.js"
-    ]
+    "knowsAbout": ["Machine Learning","Data Science","Python","scikit-learn","Power BI","SQL","React","Flutter"]
   }
   </script>
-
-  <!-- favicon etc. -->
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GLWXQGRK2J"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GLWXQGRK2J');
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,400&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;1,9..144,300&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0a0e17;
+      --bg2: #111827;
+      --bg3: #1a2235;
+      --accent: #00e5b4;
+      --accent2: #3b82f6;
+      --text: #e8eaf2;
+      --muted: #7a8499;
+      --border: rgba(255,255,255,0.07);
+      --card-bg: rgba(26,34,53,0.8);
+      --font-display: 'Fraunces', Georgia, serif;
+      --font-mono: 'DM Mono', monospace;
+    }
 
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GLWXQGRK2J"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    html { scroll-behavior: smooth; }
 
-  gtag('config', 'G-GLWXQGRK2J');
-</script>
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-mono);
+      font-size: 15px;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
 
+    /* ── Grid noise background ── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(0,229,180,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,229,180,0.03) 1px, transparent 1px);
+      background-size: 48px 48px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ── Nav ── */
+    header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: rgba(10,14,23,0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    nav { max-width: 1100px; margin: 0 auto; padding: 0 1.5rem; }
+
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 60px;
+    }
+
+    .logo {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      font-weight: 300;
+      letter-spacing: 0.01em;
+      color: var(--text);
+    }
+
+    .logo span { color: var(--accent); }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--muted);
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover { color: var(--accent); }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 4px;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 22px;
+      height: 1.5px;
+      background: var(--text);
+      transition: 0.3s;
+    }
+
+    /* ── Hero ── */
+    #hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+      padding: 100px 1.5rem 60px;
+    }
+
+    .hero-content {
+      max-width: 1100px;
+      margin: 0 auto;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .hero-label {
+      font-size: 0.72rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .hero-label::before {
+      content: '';
+      display: inline-block;
+      width: 28px;
+      height: 1px;
+      background: var(--accent);
+    }
+
+    .hero-text h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2.8rem, 6vw, 5rem);
+      font-weight: 300;
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-text h1 em {
+      font-style: italic;
+      color: var(--accent);
+    }
+
+    .hero-desc {
+      color: var(--muted);
+      font-size: 0.9rem;
+      max-width: 480px;
+      margin-bottom: 2.5rem;
+      line-height: 1.8;
+    }
+
+    .hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+    .btn {
+      display: inline-block;
+      padding: 0.65rem 1.6rem;
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      letter-spacing: 0.06em;
+      text-decoration: none;
+      border-radius: 2px;
+      transition: 0.2s;
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #0a0e17;
+    }
+
+    .btn-primary:hover { background: #00c9a0; }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--accent);
+      border: 1px solid var(--accent);
+    }
+
+    .btn-outline:hover {
+      background: rgba(0,229,180,0.07);
+    }
+
+    .hero-image { position: relative; }
+
+    .profile-wrap {
+      position: relative;
+      width: 280px;
+      margin: 0 auto;
+    }
+
+    .profile-wrap::before {
+      content: '';
+      position: absolute;
+      inset: -12px;
+      border: 1px solid rgba(0,229,180,0.25);
+      border-radius: 4px;
+    }
+
+    .profile-wrap::after {
+      content: '';
+      position: absolute;
+      inset: -24px;
+      border: 1px solid rgba(0,229,180,0.08);
+      border-radius: 4px;
+    }
+
+    .profile-pic {
+      width: 100%;
+      aspect-ratio: 3/4;
+      object-fit: cover;
+      border-radius: 2px;
+      display: block;
+      filter: grayscale(20%);
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 2rem;
+      margin-top: 2.5rem;
+    }
+
+    .stat-item { }
+
+    .stat-num {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      font-weight: 600;
+      color: var(--accent);
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-size: 0.72rem;
+      color: var(--muted);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-top: 4px;
+    }
+
+    /* ── Section base ── */
+    section { position: relative; z-index: 1; }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 100px 1.5rem;
+    }
+
+    .section-label {
+      font-size: 0.72rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section-label::before {
+      content: '';
+      display: inline-block;
+      width: 28px;
+      height: 1px;
+      background: var(--accent);
+    }
+
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 300;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      margin-bottom: 3rem;
+    }
+
+    /* ── About ── */
+    #about { background: var(--bg2); }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 320px;
+      gap: 5rem;
+      align-items: start;
+    }
+
+    .about-body p {
+      color: var(--muted);
+      margin-bottom: 1.2rem;
+      font-size: 0.9rem;
+      line-height: 1.9;
+    }
+
+    .about-body p strong { color: var(--text); font-weight: 500; }
+
+    .about-img img {
+      width: 100%;
+      border-radius: 2px;
+      filter: grayscale(15%);
+      border: 1px solid var(--border);
+    }
+
+    /* ── Skills ── */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .skill-card {
+      background: var(--bg);
+      padding: 1.8rem 1.5rem;
+      transition: background 0.2s;
+    }
+
+    .skill-card:hover { background: var(--bg3); }
+
+    .skill-icon {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+    }
+
+    .skill-card h3 {
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.6rem;
+      font-weight: 400;
+    }
+
+    .skill-card p {
+      font-size: 0.82rem;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    /* ── Highlight bar ── */
+    .highlight-bar {
+      background: linear-gradient(90deg, rgba(0,229,180,0.1), rgba(59,130,246,0.1));
+      border-left: 3px solid var(--accent);
+      padding: 1.2rem 1.5rem;
+      border-radius: 0 4px 4px 0;
+      margin: 3rem 0;
+      font-size: 0.88rem;
+      color: var(--text);
+      font-style: italic;
+    }
+
+    /* ── Associative ── */
+    #associative { background: var(--bg2); }
+
+    .assoc-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .assoc-item {
+      background: var(--bg2);
+      padding: 1.1rem 1.5rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      transition: background 0.2s;
+    }
+
+    .assoc-item:hover { background: var(--bg3); color: var(--text); }
+
+    .assoc-item::before {
+      content: '//';
+      color: var(--accent);
+      font-size: 0.72rem;
+      flex-shrink: 0;
+      opacity: 0.7;
+    }
+
+    /* ── Projects ── */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .project-card {
+      background: var(--bg);
+      padding: 2rem 1.8rem;
+      transition: background 0.2s;
+      cursor: default;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .project-card[data-href] { cursor: pointer; }
+
+    .project-card:hover { background: var(--bg3); }
+
+    .project-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: var(--accent);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s;
+    }
+
+    .project-card:hover::before { transform: scaleX(1); }
+
+    .project-tag {
+      display: inline-block;
+      font-size: 0.68rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
+      opacity: 0.8;
+    }
+
+    .project-card h3 {
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      font-weight: 300;
+      color: var(--text);
+      margin-bottom: 0.8rem;
+      line-height: 1.3;
+    }
+
+    .project-card p {
+      font-size: 0.82rem;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .project-arrow {
+      display: inline-block;
+      margin-top: 1.2rem;
+      font-size: 0.78rem;
+      color: var(--accent);
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+
+    .project-card[data-href]:hover .project-arrow { opacity: 1; }
+
+    /* ── Contact ── */
+    #contact { background: var(--bg2); }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: 5rem;
+      align-items: start;
+    }
+
+    .contact-info p {
+      font-size: 0.88rem;
+      color: var(--muted);
+      line-height: 1.8;
+      margin-bottom: 2rem;
+    }
+
+    .contact-links { display: flex; flex-direction: column; gap: 0.8rem; }
+
+    .contact-link {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      font-size: 0.82rem;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .contact-link:hover { color: var(--accent); }
+
+    .contact-link-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+      flex-shrink: 0;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: 2px;
+      padding: 0.9rem 1.1rem;
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      color: var(--text);
+      width: 100%;
+      transition: border-color 0.2s;
+      outline: none;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      border-color: rgba(0,229,180,0.4);
+    }
+
+    .contact-form input::placeholder,
+    .contact-form textarea::placeholder { color: var(--muted); }
+
+    .contact-form textarea { resize: vertical; min-height: 140px; }
+
+    #response {
+      font-size: 0.82rem;
+      margin-top: 0.5rem;
+    }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      text-align: center;
+      padding: 2rem 1.5rem;
+      font-size: 0.78rem;
+      color: var(--muted);
+      position: relative;
+      z-index: 1;
+    }
+
+    /* ── Scroll fade-in ── */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.65s ease, transform 0.65s ease;
+    }
+
+    .fade-up.visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    /* ── Mobile ── */
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+
+      .nav-links.open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px; left: 0; right: 0;
+        background: rgba(10,14,23,0.97);
+        padding: 1.5rem;
+        gap: 1.2rem;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .hero-content { grid-template-columns: 1fr; }
+      .hero-image { display: none; }
+      .about-grid { grid-template-columns: 1fr; }
+      .about-img { display: none; }
+      .contact-grid { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="nav-container">
-                <h1 class="logo">Sofien Ghorbel</h1>
-                <ul class="nav-links">
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#associative">Associative Life</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-        </nav>
-    </header>
 
-    <section id="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1>Hello, I'm Sofien Ghorbel</h1>
-                <p>Data Scientist</p>
-                <a href="#about" class="btn">Learn More</a>
-            </div>
-            <div class="hero-image">
-                <img src="sof.jpg" alt="Sofien Ghorbel" class="profile-pic">
-            </div>
+  <header>
+    <nav>
+      <div class="nav-container">
+        <h1 class="logo">Sofien <span>Ghorbel</span></h1>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#associative">Community</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <span></span><span></span><span></span>
         </div>
-    </section>
+      </div>
+    </nav>
+  </header>
 
-    <section id="about">
-        <div class="container card">
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Final-year bachelor's student in computer science, passionate about coding, problem solving, and emerging technologies. Curious, creative and driven by innovation, I want to make a positive impact in the world of technology through continuous learning and innovative solutions.</p>
-                    <p>My journey in tech has equipped me with skills in HTML, CSS, JavaScript, PHP, Python, Java, and more, allowing me to tackle complex challenges and deliver high-quality results.</p>
-                </div>
-                <div class="about-image">
-                    <img src="mai2023.jpg" alt="Additional Image" class="additional-pic">
-                </div>
-            </div>
+  <section id="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-label">Data Scientist & Software Developer</p>
+        <h1>Turning raw data into <em>meaningful insights</em></h1>
+        <p class="hero-desc">
+          Final-year computer science student with a passion for machine learning, data analytics, and building intelligent systems that create real-world impact.
+        </p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-outline">Get In Touch</a>
         </div>
-    </section>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-num">4+</div>
+            <div class="stat-label">Projects</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">2+</div>
+            <div class="stat-label">Years IEEE</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">5+</div>
+            <div class="stat-label">Languages</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="profile-wrap">
+          <img src="sof.jpg" alt="Sofien Ghorbel" class="profile-pic">
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section id="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <div class="grid">
-                <div class="item">
-                    <h3>Programming Languages</h3>
-                    <p>Python | Java | C | JavaScript | Php</p>
-                </div>
-                <div class="item">
-                    <h3>Web  Technologies</h3>
-                    <p>HTML, CSS, React | Laravel | Flutter</p>
-                </div>
-                 <div class="item">
-            <h3>Data & Analytics</h3>
-            <p>SQL | Excel | Power BI | SSMS | SSIS | Talend</p>
+  <section id="about">
+    <div class="container">
+      <p class="section-label fade-up">About me</p>
+      <h2 class="section-title fade-up">Data-driven by nature, curious by choice</h2>
+      <div class="about-grid">
+        <div class="about-body fade-up">
+          <p>
+            I'm a final-year <strong>Computer Science student</strong> with a focus on data science and machine learning. I'm passionate about extracting knowledge from complex datasets, building predictive models, and transforming raw numbers into actionable intelligence.
+          </p>
+          <p>
+            My technical toolkit spans the full data pipeline — from <strong>data wrangling and preprocessing</strong> with Python and SQL, to building and evaluating <strong>machine learning models</strong> with scikit-learn, to communicating results through interactive <strong>dashboards in Power BI</strong>. I also have strong software development skills that let me deploy models into real applications.
+          </p>
+          <p>
+            Beyond the code, I'm driven by a curiosity about how data shapes decisions — in agriculture, education, business, and beyond. I believe the best data scientists are not just analysts but storytellers who make numbers speak.
+          </p>
+          <div class="highlight-bar fade-up">
+            "Curious, creative and committed to turning data into decisions that matter."
+          </div>
         </div>
-                <div class="item">
-                    <h3>Tools & Technologies</h3>
-                    <p>Git,Hadoop</p>
-                </div>
-                <div class="item">
-                    <h3>Design</h3>
-                    <p>Adobe illustrator</p>
-                </div>
-            </div>
+        <div class="about-img fade-up">
+          <img src="mai2023.jpg" alt="Sofien Ghorbel">
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section id="associative">
-        <div class="container">
-            <h2>Associative Life</h2>
-            <div class="grid">
-                <div class="item">Member – IEEE ISIMS Student Branch (October 2023 – Present)</div>
-                <div class="item">Webmaster – IEEE WIE ISIMS Affinity Group (April 2024 – October 2024)</div>
-                <div class="item">Ambassador – WIE ACT 3.0 (2024) - IEEEXtreme 18.0 (2024)</div>
-                <div class="item">Participant – IEEEXtreme 17.0 (2023) & 18.0 (2024) & 19.0 (2025) </div>
-                <div class="item">Participant – IEEE TSYP 11 (2023) </div>
-                <div class="item">Participant – IEEE PESTGM 5.0 & TSYP 12 (2024)</div>
-                <div class="item">Participant – IEEE CSTAM 2.0 & IEEE IASTAM 5.0 (2025)</div>
-            </div>
+  <section id="skills">
+    <div class="container">
+      <p class="section-label fade-up">Technical skills</p>
+      <h2 class="section-title fade-up">Tools of the trade</h2>
+      <div class="skills-grid fade-up">
+        <div class="skill-card">
+          <div class="skill-icon">◈</div>
+          <h3>Machine Learning</h3>
+          <p>scikit-learn · NumPy · Pandas · model training · classification · regression · data preprocessing</p>
         </div>
-    </section>
-
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="grid projects-grid">
-                <div class="item" >
-                    <h3>Personal Website</h3>
-                    Development of a personal website to present my projects, skills and achievements (HTML, CSS, JavaScript, EmailJS).
-                </div>
-                <div class="item" data-href="https://game.sofienghorbel.me">
-                    <h3>JavaScript Quiz Game</h3>
-                    Development of an interactive quiz game integrating scoring and dynamic interface features.
-                </div>
-                <div class="item">
-    <h3>Crop Recommendation System</h3>
-        Machine learning API for recommending optimal crops using data preprocessing,
-        normalization, and a trained classification model with NumPy and scikit-learn.
-</div>
-                <div class="item">
-                    <h3>E-learning Platform</h3>
-                    Development of an e-learning platform with Flutter & Supabase as a mobile developer intern.
-                </div>
-            </div>
+        <div class="skill-card">
+          <div class="skill-icon">◈</div>
+          <h3>Data & Analytics</h3>
+          <p>SQL · Power BI · Excel · SSMS · SSIS · Talend · ETL pipelines · data warehousing</p>
         </div>
-    </section>
-
-        <section id="contact">
-            <div class="container">
-            <h2>Contact Me</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                <h3>Get In Touch</h3>
-                <p>Feel free to reach out for collaborations or just a friendly chat!</p>
-                </div>
-                <!-- Contact Form -->
-                <form id="contact-form" class="contact-form">
-                <input type="text" id="user_name" name="user_name" placeholder="Your Name" required>
-                <input type="email" id="user_email" name="user_email" placeholder="Your Email" required>
-                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-                <button type="submit" id="submit_btn" class="btn">Send Message</button>
-                </form>
-                <p id="response"></p>
-            </div>
-            </div>
-        </section>
-        <script>
-        
-            (function() {
-            emailjs.init("SiTuXISjqvfYLle5t");
-            })();
-        
-            // Handle form submission
-            document.getElementById("contact-form").addEventListener("submit", function(event) {
-            event.preventDefault();
-        
-            let params = {
-                user_name: document.getElementById("user_name").value,
-                user_email: document.getElementById("user_email").value,
-                message: document.getElementById("message").value,
-            };
-        
-            emailjs.send("service_uym1odg", "template_k5fgtym", params)
-                .then(() => {
-                document.getElementById("response").innerText = "✅ Message sent successfully!";
-                document.getElementById("contact-form").reset();
-                }, (error) => {
-                document.getElementById("response").innerText = "❌ Failed to send message.";
-                console.error("Error:", error);
-                });
-            });
-
-        </script>
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Sofien Ghorbel. All rights reserved.</p>
+        <div class="skill-card">
+          <div class="skill-icon">◈</div>
+          <h3>Programming</h3>
+          <p>Python · Java · JavaScript · PHP · C · clean code · problem solving</p>
         </div>
-    </footer>
+        <div class="skill-card">
+          <div class="skill-icon">◈</div>
+          <h3>Web & Mobile</h3>
+          <p>React · HTML · CSS · Laravel · Flutter · Supabase · REST APIs</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">◈</div>
+          <h3>Big Data & Tools</h3>
+          <p>Hadoop · Git · version control · collaborative development</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">◈</div>
+          <h3>Design</h3>
+          <p>Adobe Illustrator · data visualization · dashboard design </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="associative">
+    <div class="container">
+      <p class="section-label fade-up">Community</p>
+      <h2 class="section-title fade-up">Associative life</h2>
+      <div class="assoc-list fade-up">
+        <div class="assoc-item">Member – IEEE ISIMS Student Branch (October 2023 – Present)</div>
+        <div class="assoc-item">Webmaster – IEEE WIE ISIMS Affinity Group (April 2024 – October 2024)</div>
+        <div class="assoc-item">Ambassador – WIE ACT 3.0 (2024) · IEEEXtreme 18.0 (2024)</div>
+        <div class="assoc-item">Participant – IEEEXtreme 17.0 (2023) · 18.0 (2024) · 19.0 (2025)</div>
+        <div class="assoc-item">Participant – IEEE TSYP 11 (2023)</div>
+        <div class="assoc-item">Participant – IEEE PESTGM 5.0 · TSYP 12 (2024)</div>
+        <div class="assoc-item">Participant – IEEE CSTAM 2.0 · IEEE IASTAM 5.0 (2025)</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <p class="section-label fade-up">Work</p>
+      <h2 class="section-title fade-up">Selected projects</h2>
+      <div class="projects-grid fade-up">
+        <div class="project-card">
+          <span class="project-tag">Machine Learning · Python</span>
+          <h3>Crop Recommendation System</h3>
+          <p>Machine learning API that recommends optimal crops based on environmental data. Built a full pipeline: data preprocessing, normalization, and a trained classification model using NumPy and scikit-learn.</p>
+          <span class="project-arrow">→ View project</span>
+        </div>
+        <div class="project-card" data-href="https://game.sofienghorbel.me">
+          <span class="project-tag">JavaScript · Web</span>
+          <h3>JavaScript Quiz Game</h3>
+          <p>Interactive quiz game with dynamic scoring, real-time UI updates, and an engaging user interface — built entirely in vanilla JavaScript.</p>
+          <span class="project-arrow">→ View project</span>
+        </div>
+        <div class="project-card">
+          <span class="project-tag">Flutter · Mobile</span>
+          <h3>E-learning Platform</h3>
+          <p>Full-featured mobile e-learning application developed with Flutter and Supabase during a mobile developer internship, supporting course management and user progress tracking.</p>
+          <span class="project-arrow">→ View project</span>
+        </div>
+        <div class="project-card">
+          <span class="project-tag">HTML · CSS · JavaScript</span>
+          <h3>Personal Portfolio</h3>
+          <p>This very site — designed and built from scratch to showcase projects, skills, and professional achievements, with EmailJS integration for contact.</p>
+          <span class="project-arrow">→ View project</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <p class="section-label fade-up">Contact</p>
+      <h2 class="section-title fade-up">Let's work together</h2>
+      <div class="contact-grid fade-up">
+        <div class="contact-info">
+          <p>
+            I'm open to data science internships, collaborative projects, and research opportunities. Whether you have a dataset to make sense of or an idea to build — let's talk.
+          </p>
+          <div class="contact-links">
+            <a href="https://www.linkedin.com/in/sofien-ghorbel" target="_blank" class="contact-link">
+              <span class="contact-link-dot"></span> LinkedIn
+            </a>
+            <a href="https://github.com/sofien023" target="_blank" class="contact-link">
+              <span class="contact-link-dot"></span> GitHub
+            </a>
+          </div>
+        </div>
+        <form id="contact-form" class="contact-form">
+          <input type="text" id="user_name" name="user_name" placeholder="Your name" required>
+          <input type="email" id="user_email" name="user_email" placeholder="Your email" required>
+          <textarea id="message" name="message" placeholder="Your message" required></textarea>
+          <button type="submit" id="submit_btn" class="btn btn-primary" style="align-self:flex-start;">Send Message</button>
+          <p id="response"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sofien Ghorbel. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>
+    // EmailJS
+    (function() { emailjs.init("SiTuXISjqvfYLle5t"); })();
+
+    document.getElementById("contact-form").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const btn = document.getElementById("submit_btn");
+      btn.textContent = "Sending…";
+      btn.disabled = true;
+      emailjs.send("service_uym1odg", "template_k5fgtym", {
+        user_name: document.getElementById("user_name").value,
+        user_email: document.getElementById("user_email").value,
+        message: document.getElementById("message").value,
+      }).then(() => {
+        document.getElementById("response").textContent = "✅ Message sent!";
+        document.getElementById("contact-form").reset();
+      }, () => {
+        document.getElementById("response").textContent = "❌ Failed to send. Please try again.";
+      }).finally(() => {
+        btn.textContent = "Send Message";
+        btn.disabled = false;
+      });
+    });
+
+    // Project card click
+    document.querySelectorAll(".project-card[data-href]").forEach(card => {
+      card.addEventListener("click", () => window.open(card.dataset.href, "_blank"));
+    });
+
+    // Hamburger menu
+    const ham = document.getElementById("hamburger");
+    const nav = document.getElementById("nav-links");
+    ham.addEventListener("click", () => nav.classList.toggle("open"));
+
+    // Scroll fade-in
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add("visible"); });
+    }, { threshold: 0.12 });
+    document.querySelectorAll(".fade-up").forEach(el => observer.observe(el));
+  </script>
 </body>
 </html>

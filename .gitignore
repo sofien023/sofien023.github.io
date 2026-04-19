@@ -1,0 +1,9 @@
+# API Keys & Env
+.env
+js/keys-built.js
+
+
+# Node
+node_modules/
+*.log
+

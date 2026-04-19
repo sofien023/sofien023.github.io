@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Home -->
+  <url>
+    <loc>https://sofienghorbel.me/</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <!-- Alternate language versions -->
+    <xhtml:link rel="alternate" hreflang="en" href="https://sofienghorbel.me/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://sofienghorbel.me/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://sofienghorbel.me/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sofienghorbel.me/"/>
+  </url>
+
+  <!-- About section -->
+  <url>
+    <loc>https://sofienghorbel.me/#about</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Skills section -->
+  <url>
+    <loc>https://sofienghorbel.me/#skills</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Projects section -->
+  <url>
+    <loc>https://sofienghorbel.me/#projects</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Hire Me section -->
+  <url>
+    <loc>https://sofienghorbel.me/#hire</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Contact section -->
+  <url>
+    <loc>https://sofienghorbel.me/#contact</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>

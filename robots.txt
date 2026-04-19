@@ -1,0 +1,12 @@
+# robots.txt — sofienghorbel.me
+# Instructs search engine crawlers how to index the site
+
+User-agent: *
+Allow: /
+
+# Block access to sensitive files
+Disallow: /config.js
+Disallow: /.git/
+
+# Sitemap location
+Sitemap: https://sofienghorbel.me/sitemap.xml

@@ -3,9 +3,6 @@
  * Depends on: i18n.js (T object), config.js (CONFIG object), EmailJS SDK
  */
 
-/* ══════════════════════════════════════
-   GOOGLE ANALYTICS — injected from config
-══════════════════════════════════════ */
 (function () {
   if (!CONFIG.GA_MEASUREMENT_ID || CONFIG.GA_MEASUREMENT_ID.startsWith("YOUR_")) return;
 

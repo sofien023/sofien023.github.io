@@ -1,8 +1,3 @@
-/**
- * i18n.js — Translation strings for Sofien Ghorbel Portfolio
- * Supported languages: English (en), French (fr), Arabic (ar)
- */
-
 const T = {
   en: {
     /* Navigation */
@@ -13,8 +8,6 @@ const T = {
     "nav.projects":  "Projects",
     "nav.contact":   "Contact",
     "nav.hire":      "Hire Me",
-
-    /* Hero */
     "hero.label":     "Data Scientist & Software Developer",
     "hero.title":     "Turning raw data into <em>meaningful insights</em>",
     "hero.desc":      "Final-year computer science student with a passion for machine learning, data analytics, and building intelligent systems that create real-world impact.",

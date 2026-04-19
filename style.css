@@ -265,7 +265,7 @@ body.ar .stat-label { letter-spacing: 0; }
 /* ══════════════════════════════════════
    SHARED SECTION STYLES
 ══════════════════════════════════════ */
-section { position: relative; z-index: 1; }
+section { position: relative; z-index: 1; min-height: 100vh}
 
 .container { max-width: 1100px; margin: 0 auto; padding: 100px 1.5rem; }
 

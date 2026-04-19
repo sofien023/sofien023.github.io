@@ -120,7 +120,7 @@ body.ar .nav-links a { letter-spacing: 0; }
 
 /* Hamburger */
 .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
-.hamburger span { display: block; width: 22px; height: 1.5px; background: var(--text); transition: 0.3s; }
+.hamburger span { display: block; width: 22px; height: 1.5px; background: var(--bg); transition: 0.3s; }
 
 /* ══════════════════════════════════════
    HERO

@@ -10,7 +10,7 @@ const T = {
     "nav.hire":      "Hire Me",
     "hero.label":     "Data Scientist & Software Developer",
     "hero.title":     "Turning raw data into <em>meaningful insights</em>",
-    "hero.desc":      "Final-year computer science student with a passion for machine learning, data analytics, and building intelligent systems that create real-world impact.",
+    "hero.desc":      "Computer Science Graduate with a passion for machine learning, data analytics, and building intelligent systems that create real-world impact.",
     "hero.available": "Available for hire",
     "hero.btn1":      "View Projects",
     "hero.btnhire":   "Hire Me",
@@ -27,7 +27,7 @@ const T = {
     /* About */
     "about.label": "About me",
     "about.title": "Data-driven by nature, curious by choice",
-    "about.p1":    "I'm a final-year <strong>Computer Science student</strong> with a focus on data science and machine learning. I'm passionate about extracting knowledge from complex datasets, building predictive models, and transforming raw numbers into actionable intelligence.",
+    "about.p1":    "I'm a <strong>Computer Science Graduate</strong> with a focus on data science and machine learning. I'm passionate about extracting knowledge from complex datasets, building predictive models, and transforming raw numbers into actionable intelligence.",
     "about.p2":    "My technical toolkit spans the full data pipeline — from <strong>data wrangling and preprocessing</strong> with Python and SQL, to building and evaluating <strong>machine learning models</strong> with scikit-learn, to communicating results through interactive <strong>dashboards in Power BI</strong>. I also have strong software development skills that let me deploy models into real applications.",
     "about.p3":    "Beyond the code, I'm driven by a curiosity about how data shapes decisions — in agriculture, education, business, and beyond. I believe the best data scientists are not just analysts but storytellers who make numbers speak.",
     "about.quote": "\"Curious, creative and committed to turning data into decisions that matter.\"",
@@ -91,7 +91,7 @@ const T = {
     /* Contact */
     "contact.label":   "Contact",
     "contact.title":   "Let's work together",
-    "contact.desc":    "I'm open to data science internships, collaborative projects, and research opportunities. Whether you have a dataset to make sense of or an idea to build — let's talk.",
+    "contact.desc":    "I'm open to data science Jobs, collaborative projects, and research opportunities. Whether you have a dataset to make sense of or an idea to build — let's talk.",
     "contact.name":    "Your name",
     "contact.email":   "Your email",
     "contact.message": "Your message",
@@ -114,7 +114,7 @@ const T = {
     /* Hero */
     "hero.label":     "Data Scientist & Développeur Logiciel",
     "hero.title":     "Transformer les données brutes en <em>insights pertinents</em>",
-    "hero.desc":      "Étudiant en dernière année d'informatique, passionné par le machine learning, l'analyse de données et la création de systèmes intelligents à impact réel.",
+    "hero.desc":      "Diplomée en licence en informatique, passionné par le machine learning, l'analyse de données et la création de systèmes intelligents à impact réel.",
     "hero.available": "Disponible à l'embauche",
     "hero.btn1":      "Voir les projets",
     "hero.btnhire":   "Me recruter",
@@ -131,7 +131,7 @@ const T = {
     /* About */
     "about.label": "À propos de moi",
     "about.title": "Guidé par les données, animé par la curiosité",
-    "about.p1":    "Je suis étudiant en dernière année d'<strong>Informatique</strong>, spécialisé en data science et machine learning. Je suis passionné par l'extraction de connaissances à partir de jeux de données complexes et par la transformation de chiffres bruts en intelligence actionnable.",
+    "about.p1":    "Je suis Diplomée en licence en <strong>Informatique</strong>, spécialisé en data science et machine learning. Je suis passionné par l'extraction de connaissances à partir de jeux de données complexes et par la transformation de chiffres bruts en intelligence actionnable.",
     "about.p2":    "Mon arsenal technique couvre tout le pipeline de données — du <strong>nettoyage et prétraitement</strong> avec Python et SQL, à la construction et l'évaluation de <strong>modèles de machine learning</strong> avec scikit-learn, jusqu'à la communication des résultats via des <strong>tableaux de bord Power BI</strong> interactifs.",
     "about.p3":    "Au-delà du code, je suis animé par la curiosité de comprendre comment les données façonnent les décisions — en agriculture, éducation, business et au-delà. Je crois que les meilleurs data scientists sont des narrateurs qui font parler les chiffres.",
     "about.quote": "\"Curieux, créatif et déterminé à transformer les données en décisions qui comptent.\"",
@@ -195,7 +195,7 @@ const T = {
     /* Contact */
     "contact.label":   "Contact",
     "contact.title":   "Travaillons ensemble",
-    "contact.desc":    "Je suis ouvert aux stages en data science, aux projets collaboratifs et aux opportunités de recherche. Que vous ayez un jeu de données à analyser ou une idée à concrétiser — parlons-en.",
+    "contact.desc":    "Je suis ouvert aux emplois en data science, aux projets collaboratifs et aux opportunités de recherche. Que vous ayez un jeu de données à analyser ou une idée à concrétiser — parlons-en.",
     "contact.name":    "Votre nom",
     "contact.email":   "Votre e-mail",
     "contact.message": "Votre message",
@@ -218,7 +218,7 @@ const T = {
     /* Hero */
     "hero.label":     "عالم بيانات ومطور برمجيات",
     "hero.title":     "تحويل البيانات الخام إلى <em>رؤى ذات معنى</em>",
-    "hero.desc":      "طالب في السنة الأخيرة من الدراسات الحاسوبية، شغوف بالتعلم الآلي وتحليل البيانات وبناء أنظمة ذكية ذات تأثير حقيقي.",
+    "hero.desc":      "متحصل على الإجازة في علوم الإعلامية، شغوف بالتعلم الآلي وتحليل البيانات وبناء أنظمة ذكية ذات تأثير حقيقي.",
     "hero.available": "متاح للتوظيف",
     "hero.btn1":      "عرض المشاريع",
     "hero.btnhire":   "وظّفني",
@@ -235,7 +235,7 @@ const T = {
     /* About */
     "about.label": "عني",
     "about.title": "مدفوع بالبيانات، فضولي بطبعي",
-    "about.p1":    "أنا طالب في السنة الأخيرة من <strong>علوم الحاسوب</strong> متخصص في علم البيانات والتعلم الآلي. أسعى إلى استخراج المعرفة من مجموعات البيانات المعقدة وبناء نماذج تنبؤية تحوّل الأرقام إلى ذكاء قابل للتنفيذ.",
+    "about.p1":    "متحصل على الإجازة في علوم الإعلامية متخصص في علم البيانات والتعلم الآلي. أسعى إلى استخراج المعرفة من مجموعات البيانات المعقدة وبناء نماذج تنبؤية تحوّل الأرقام إلى ذكاء قابل للتنفيذ.",
     "about.p2":    "تغطي أدواتي التقنية خط أنابيب البيانات الكامل — من <strong>المعالجة المسبقة للبيانات</strong> باستخدام Python وSQL، إلى بناء وتقييم <strong>نماذج التعلم الآلي</strong> مع scikit-learn، وصولاً إلى إيصال النتائج عبر <strong>لوحات معلومات Power BI</strong> التفاعلية.",
     "about.p3":    "أتجاوز الكود لأفهم كيف تشكّل البيانات القرارات — في الزراعة والتعليم والأعمال وما هو أبعد. أؤمن أن أفضل علماء البيانات رواةٌ يجعلون الأرقام تتحدث.",
     "about.quote": "\"فضولي، مبدع، وملتزم بتحويل البيانات إلى قرارات تصنع الفارق.\"",
@@ -299,7 +299,7 @@ const T = {
     /* Contact */
     "contact.label":   "التواصل",
     "contact.title":   "لنعمل معاً",
-    "contact.desc":    "أنا منفتح على التدريبات في علم البيانات والمشاريع التعاونية وفرص البحث. سواء كان لديك مجموعة بيانات لتحليلها أو فكرة لبنائها — دعنا نتحدث.",
+    "contact.desc":    "أنا منفتح على فرص العمل في علم البيانات والمشاريع التعاونية وفرص البحث. سواء كان لديك مجموعة بيانات لتحليلها أو فكرة لبنائها — دعنا نتحدث.",
     "contact.name":    "اسمك",
     "contact.email":   "بريدك الإلكتروني",
     "contact.message": "رسالتك",

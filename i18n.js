@@ -19,10 +19,10 @@ const T = {
     "hero.stat113":   "On LinkedIn",
     "hero.stat2":     "Years IEEE",
     "hero.stat3":     "Languages",
-    "hero.svc1":      "📊 Data Analysis & Visualization",
-    "hero.svc2":      "🤖 Machine Learning Model Development",
-    "hero.svc3":      "🗄️ ETL Pipelines & Data Warehousing",
-    "hero.svc4":      "🌐 Web & Mobile App Development",
+    "hero.svc1":      "Data Analysis & Visualization",
+    "hero.svc2":      "Machine Learning Model Development",
+    "hero.svc3":      "ETL Pipelines & Data Warehousing",
+    "hero.svc4":      "Web & Mobile App Development",
 
     /* About */
     "about.label": "About me",
@@ -123,10 +123,10 @@ const T = {
     "hero.stat113":   "Sur LinkedIn",
     "hero.stat2":     "Ans IEEE",
     "hero.stat3":     "Langages",
-    "hero.svc1":      "📊 Analyse & Visualisation de données",
-    "hero.svc2":      "🤖 Développement de modèles ML",
-    "hero.svc3":      "🗄️ Pipelines ETL & Data Warehousing",
-    "hero.svc4":      "🌐 Développement Web & Mobile",
+    "hero.svc1":      "Analyse & Visualisation de données",
+    "hero.svc2":      "Développement de modèles ML",
+    "hero.svc3":      "Pipelines ETL & Data Warehousing",
+    "hero.svc4":      "Développement Web & Mobile",
 
     /* About */
     "about.label": "À propos de moi",
@@ -227,10 +227,10 @@ const T = {
     "hero.stat113":   "على LinkedIn",
     "hero.stat2":     "سنوات IEEE",
     "hero.stat3":     "لغات",
-    "hero.svc1":      "📊 تحليل وتصور البيانات",
-    "hero.svc2":      "🤖 تطوير نماذج التعلم الآلي",
-    "hero.svc3":      "🗄️ خطوط ETL ومستودعات البيانات",
-    "hero.svc4":      "🌐 تطوير تطبيقات الويب والجوال",
+    "hero.svc1":      "تحليل وتصور البيانات",
+    "hero.svc2":      "تطوير نماذج التعلم الآلي",
+    "hero.svc3":      "خطوط ETL ومستودعات البيانات",
+    "hero.svc4":      "تطوير تطبيقات الويب والجوال",
 
     /* About */
     "about.label": "عني",

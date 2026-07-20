@@ -8,7 +8,7 @@ const T = {
     "nav.projects":  "Projects",
     "nav.contact":   "Contact",
     "nav.hire":      "Hire Me",
-    "hero.label":     "Data Scientist & Software Developer",
+    "hero.label":     "Data Analyst & Software Developer",
     "hero.title":     "Turning raw data into <em>meaningful insights</em>",
     "hero.desc":      "Computer Science Graduate with a passion for machine learning, data analytics, and building intelligent systems that create real-world impact.",
     "hero.available": "Available for hire",
@@ -112,7 +112,7 @@ const T = {
     "nav.hire":      "Me recruter",
 
     /* Hero */
-    "hero.label":     "Data Scientist & Développeur Logiciel",
+    "hero.label":     "Data Analyst & Développeur Logiciel",
     "hero.title":     "Transformer les données brutes en <em>insights pertinents</em>",
     "hero.desc":      "Diplomée en licence en informatique, passionné par le machine learning, l'analyse de données et la création de systèmes intelligents à impact réel.",
     "hero.available": "Disponible à l'embauche",
@@ -216,7 +216,7 @@ const T = {
     "nav.hire":      "وظّفني",
 
     /* Hero */
-    "hero.label":     "عالم بيانات ومطور برمجيات",
+    "hero.label":     "محلل بيانات ومطور برمجيات",
     "hero.title":     "تحويل البيانات الخام إلى <em>رؤى ذات معنى</em>",
     "hero.desc":      "متحصل على الإجازة في علوم الإعلامية، شغوف بالتعلم الآلي وتحليل البيانات وبناء أنظمة ذكية ذات تأثير حقيقي.",
     "hero.available": "متاح للتوظيف",
